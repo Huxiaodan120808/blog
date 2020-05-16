@@ -102,7 +102,7 @@ npm run serve
 ├── .browserslistrc       # 指定项目的目标浏览器的范围，查看“配置项-目标浏览器”了解
 ├── .env                  # 环境变量配置，详细请阅读“环境变量和模式”部分介绍
 ├── .gitignore            # 配置不提交到git仓库的文件
-├── postcss.config.js     # 配置rem转换，查看“配置项 - postcss.config.js”了解
+├── postcss.config.js     # 配置rem转换，查看“配置项 - postcss.config.js”了解https://www.npmjs.com/package/postcss-px2rem
 └── vue.config.js         # 配置文件，详细请阅读“配置项-vue.config.js”部分
 ```
 开发详情：[移动端](/guide/mobile), [PC端](/guide/pc)

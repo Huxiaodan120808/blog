@@ -3,7 +3,7 @@
   sidebar: auto
   title: 'IComm-UI'
   actionText: 立即体验 →
-  actionLink: /guide/common
+  actionLink: /guide/pc
   features:
   - title: 开发模版
     details: 提炼电脑端和移动端Vue开发模版，集成请求封装，国际化，主题, ESlint等功能

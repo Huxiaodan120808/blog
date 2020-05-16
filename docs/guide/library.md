@@ -1,9 +1,147 @@
 ## 基础组件
-## 业务组件
-## 类库
+基础组件又叫整个项目乃至跨项目通用组件，每个组件不涉及业务逻辑，只有入口参数和事件回调。例如封装一个Dialog.vue，主要通过prop设置自定义参数，控制文案、样式等通用属性；通过$emit实现事件的回调；通过slot实现组件的更多拓展功能。
+```html
+<template>
+  <el-dialog
+    class="mtg-dialog"
+    :width="width"
+    :modal="modal"
+    :close-on-click-modal="closeOnClickModal"
+    :close-on-press-escape="closeOnPressEscape"
+    :show-close="showClose"
+    :center="center"
+    :destroy-on-close="destroyOnClose"
+    :append-to-body="appendToBody"
+    :visible.sync="dialogVisible"
+    :before-close="handleClose"
+    @open="open">
+    <!-- 通过slot实现可拓展 -->
+    <slot></slot>
+    <!-- 共同配置项 -->
+    <span slot="title" class="el-dialog__title" v-if="!isCustomHeader">
+      <span v-html="title ? title : $t('common.tips')"></span>
+    </span>
+    <span slot="footer" v-if="!isCustomButton">
+      <el-button class="margin-right-30" size="mini" @click="cancel">{{$t('common.cancel')}}</el-button>
+      <el-button size="mini" type="primary" @click="save">{{$t('common.confirm')}}</el-button>
+    </span>
+  </el-dialog>
+</template>
+<script>
+export default {
+  name: 'mtgDialog',
+  props: { // 共同配置项
+    visible: {
+      type: Boolean,
+      default: false
+    },
+    isCustomHeader: {
+      type: Boolean,
+      default: false
+    },
+    isCustomButton: {
+      type: Boolean,
+      default: false
+    },
+    title: {
+      type: String,
+      default: ''
+    },
+    width: {
+      type: String,
+      default: '500px'
+    },
+    modal: {
+      type: Boolean,
+      default: true
+    },
+    closeOnClickModal: {
+      type: Boolean,
+      default: true
+    },
+    closeOnPressEscape: {
+      type: Boolean,
+      default: true
+    },
+    showClose: {
+      type: Boolean,
+      default: false
+    },
+    center: {
+      type: Boolean,
+      default: false
+    },
+    destroyOnClose: {
+      type: Boolean,
+      default: false
+    },
+    appendToBody: {
+      type: Boolean,
+      default: false
+    }
+  },
+  watch: {
+    visible () {
+      this.dialogVisible = this.visible
+    }
+  },
+  data () {
+    return {
+      dialogVisible: false
+    }
+  },
+  methods: {
+    handleClose () {
+      this.dialogVisible = false
+      this.$emit('update:visible', false) // 事件回调给父组件，在父组件中实现相应的业务逻辑
+      this.$emit('before-close')
+    },
+    save () {
+      this.$emit('save')
+    },
+    cancel () {
+      this.dialogVisible = false
+      this.$emit('update:visible', false)
+      this.$emit('cancel')
+    },
+    open () {
+      this.$emit('open')
+    }
+  }
+}
+</script>
+<style lang="scss" scoped>
 
-### Loadsh
-`loadsh`是一个一致性、模块化、高性能的 `JavaScript` 实用工具库。
+</style>
+```
+
+## 业务组件
+业务组件，是把模块代码根据功能细分，实现每个组件中的功能高度内聚，以便更好的项目维护。如会议控制模块
+```sh
+├── components
+│   ├── ConferenceList # 会议列表-切换会议
+│   ├── ConferenceInfo # 会议信息
+│   ├── CommonFunction  # 会议操作
+│   ├── ToolBar # 与会者操作工具栏
+│   ├── ParticipantList # 与会者列表
+```
+## 类库
+### Utils
+```sh
+├── utils
+│   ├── mixins # 混入
+│   ├── directive.js # 会议信息
+│   ├── element-ui.js  # UI 按需引入
+│   ├── enum.js # 整个项目的枚举
+│   ├── filter.js # filter过滤方法 format、url参数截取等
+│   ├── request.js # axio的封装
+│   ├── crypt.js # 加密
+│   ├── clipboard.js # 复制粘贴
+│   ├── qr-img-down.js # 二维码相关的代码生成、下载、图片和文字合成等
+│   ├── ... # 其他功能性的js
+```
+### Lodash
+`lodash`是一个一致性、模块化、高性能的 `JavaScript` 实用工具库。
 
 `Lodash` 通过降低 `array、number、objects、string` 等等的使用难度从而让 `JavaScript` 变得更简单。
 

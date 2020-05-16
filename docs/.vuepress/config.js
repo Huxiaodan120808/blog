@@ -38,11 +38,11 @@ module.exports = {
             {
               path: 'mobile',
               title: '移动端开发',
+            },
+            {
+              path: 'library',
+              title: '插件开发',
             }
-            // {
-            //   path: 'library',
-            //   title: '插件开发',
-            // }
           ]
         },
         {
@@ -162,10 +162,10 @@ module.exports = {
     },
     lastUpdated: 'Last Updated',
   },
-  lineNumbers: true,
-  configureWebpack: {
-    output: {
-      publicPath: './'
-    }
-  }
+  lineNumbers: true
+  // configureWebpack: {
+  //   output: {
+  //     publicPath: './'
+  //   }
+  // }
 }

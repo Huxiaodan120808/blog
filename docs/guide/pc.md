@@ -483,7 +483,29 @@ export default {
   }
 </script>
 ```
-1.2 在普通js或者全局调用。由于`$t`注册在组件内，故只能在组件内调用，在普通js中不识别该函数。外部调用时，需要引入`i18n`
+
+1.2 如果不需要切换语言可以放到data里面，如果有切换则放到computed里面，否者无效，更多可连接data\computed区别
+```html
+<template>
+  <header>{{title}}</header>
+  <div>{{$t('message')}}</div>
+  <div></div>
+  <button>{{$t('public.save')}}</button>
+</template>
+<script>
+  export default {
+    data () {
+      return {
+      }
+    },
+    computed: {
+      title: this.$t('title') // 标题; js部分调用
+    }
+  }
+</script>
+```
+
+1.3 在普通js或者全局调用。由于`$t`注册在组件内，故只能在组件内调用，在普通js中不识别该函数。外部调用时，需要引入`i18n`
 ```js
 import i18n from '@/lang'
 

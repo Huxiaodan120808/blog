@@ -4,12 +4,12 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "stylus": "^0.54.5",
+    "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "vuepress": "^1.0.3"
+    "vuepress": "^1.5.0"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-decoupled-document": "^12.4.0",
-    "@ckeditor/ckeditor5-vue": "^1.0.0-beta.2"
+    "@ckeditor/ckeditor5-vue": "^1.0.1"
   }
 }
