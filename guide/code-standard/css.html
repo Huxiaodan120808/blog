@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Css编码规范 | Umeet-blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="集合脚手架, Vue开发模版, 代码规范, 工作流规范, 前端相关组件, 接口管理平台系统等, 旨在统一前端开发流程, 开发规范, 减少前端重复造轮子, 提升前端开发效率和代码质量">
+    <link rel="preload" href="./assets/css/0.styles.8c3c07e4.css" as="style"><link rel="preload" href="./assets/js/app.6bfa0bc3.js" as="script"><link rel="preload" href="./assets/js/2.a7617878.js" as="script"><link rel="preload" href="./assets/js/24.ff27afea.js" as="script"><link rel="prefetch" href="./assets/js/10.3b2d36ae.js"><link rel="prefetch" href="./assets/js/11.ef3ee154.js"><link rel="prefetch" href="./assets/js/12.e959da27.js"><link rel="prefetch" href="./assets/js/13.ced5678e.js"><link rel="prefetch" href="./assets/js/14.d196a903.js"><link rel="prefetch" href="./assets/js/15.eda7f2d2.js"><link rel="prefetch" href="./assets/js/16.5c7c40af.js"><link rel="prefetch" href="./assets/js/17.2b19feb1.js"><link rel="prefetch" href="./assets/js/18.ea96c925.js"><link rel="prefetch" href="./assets/js/19.fd8f6699.js"><link rel="prefetch" href="./assets/js/20.8a1ae631.js"><link rel="prefetch" href="./assets/js/21.eba73d0e.js"><link rel="prefetch" href="./assets/js/22.3a7a6513.js"><link rel="prefetch" href="./assets/js/23.2ec401bf.js"><link rel="prefetch" href="./assets/js/25.6f8d04d8.js"><link rel="prefetch" href="./assets/js/26.c512dad5.js"><link rel="prefetch" href="./assets/js/27.8d69e674.js"><link rel="prefetch" href="./assets/js/28.5b6e4c9e.js"><link rel="prefetch" href="./assets/js/29.1b3f5088.js"><link rel="prefetch" href="./assets/js/3.5e54e78d.js"><link rel="prefetch" href="./assets/js/30.292cd2a0.js"><link rel="prefetch" href="./assets/js/31.aa03a27a.js"><link rel="prefetch" href="./assets/js/32.3bdfabf4.js"><link rel="prefetch" href="./assets/js/33.97fb4d32.js"><link rel="prefetch" href="./assets/js/34.880b60e6.js"><link rel="prefetch" href="./assets/js/35.02990515.js"><link rel="prefetch" href="./assets/js/4.69398dec.js"><link rel="prefetch" href="./assets/js/5.b1c50692.js"><link rel="prefetch" href="./assets/js/6.78b1bcbe.js"><link rel="prefetch" href="./assets/js/7.d06272b1.js"><link rel="prefetch" href="./assets/js/8.3ba580a9.js"><link rel="prefetch" href="./assets/js/9.b9cf7884.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.8c3c07e4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Umeet-blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="功能" class="dropdown-title"><span class="title">功能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/components/richtext.html" class="nav-link">
+  富文本
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  复制粘贴
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="相关系统" class="dropdown-title"><span class="title">相关系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/ecology/scaffold.html" class="nav-link">
+  脚手架工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/onpm.html" class="nav-link">
+  NPM镜像仓库
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/yapi.html" class="nav-link">
+  接口管理平台
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/sentry.html" class="nav-link">
+  前端错误统计平台
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="功能" class="dropdown-title"><span class="title">功能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/components/richtext.html" class="nav-link">
+  富文本
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  复制粘贴
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="相关系统" class="dropdown-title"><span class="title">相关系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/ecology/scaffold.html" class="nav-link">
+  脚手架工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/onpm.html" class="nav-link">
+  NPM镜像仓库
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/yapi.html" class="nav-link">
+  接口管理平台
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/sentry.html" class="nav-link">
+  前端错误统计平台
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开发指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/common.html" class="sidebar-link">基础</a></li><li><a href="/blog/guide/pc.html" class="sidebar-link">PC端开发</a></li><li><a href="/blog/guide/mobile.html" class="sidebar-link">移动端开发</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>多环境配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/env-standard/env-build.html" class="sidebar-link">Vue多环境配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>代码规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/code-standard/html.html" class="sidebar-link">HTML编码规范</a></li><li><a href="/blog/guide/code-standard/css.html" class="active sidebar-link">CSS编码规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_1-前言" class="sidebar-link">1 前言</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_2-代码风格" class="sidebar-link">2 代码风格</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_3-通用" class="sidebar-link">3 通用</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_4-值与单位" class="sidebar-link">4 值与单位</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_5-文本编排" class="sidebar-link">5 文本编排</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_6-变换与动画" class="sidebar-link">6 变换与动画</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_7-响应式" class="sidebar-link">7 响应式</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_8-兼容性" class="sidebar-link">8 兼容性</a></li><li class="sidebar-sub-header"><a href="/blog/guide/code-standard/css.html#_9-oocss-和-bem" class="sidebar-link">9 OOCSS 和 BEM</a></li></ul></li><li><a href="/blog/guide/code-standard/js.html" class="sidebar-link">JS编码规范</a></li><li><a href="/blog/guide/code-standard/vue.html" class="sidebar-link">Vue编码规范</a></li><li><a href="/blog/guide/code-standard/eslint.html" class="sidebar-link">ESLint规范</a></li><li><a href="/blog/guide/code-standard/filename.html" class="sidebar-link">命名规范</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>工作流规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/dev-standard/project-version.html" class="sidebar-link">版本规范</a></li><li><a href="/blog/guide/dev-standard/git-version.html" class="sidebar-link">Git-Flow工作流规范</a></li><li><a href="/blog/guide/cooperation-standard/cooperation.html" class="sidebar-link">前后端协作流程规范</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css编码规范"><a href="#css编码规范" class="header-anchor">#</a> Css编码规范</h1> <h2 id="_1-前言"><a href="#_1-前言" class="header-anchor">#</a> 1 前言</h2> <p>本文档主要在于对网页样式描述语言 CSS 使用过程中常见语法进行规范，旨在跨项目中 CSS 保持团队风格一致性</p> <h2 id="_2-代码风格"><a href="#_2-代码风格" class="header-anchor">#</a> 2 代码风格</h2> <h4 id="_2-1-文件"><a href="#_2-1-文件" class="header-anchor">#</a> 2.1 文件</h4> <p><strong>[强制] CSS 文件使用无 <code>BOM</code> 的 <code>UTF-8</code> 编码。</strong></p> <p>解释：</p> <p>UTF-8 编码具有更广泛的适应性。<a href="https://en.wikipedia.org/wiki/Byte_order_mark" target="_blank" rel="noopener noreferrer">BOM<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 在使用程序或工具处理文件时可能造成不必要的干扰。</p> <p>简单的说web server 一般架设在linux服务器上，对于BOM的支持有限，容易造成解析异常</p> <h4 id="_2-2-空格"><a href="#_2-2-空格" class="header-anchor">#</a> 2.2 空格</h4> <p><strong>[强制] <code>选择器</code> 与 <code>{</code> 之间必须包含空格。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.selector</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] <code>属性名</code> 与之后的 <code>:</code> 之间不允许包含空格， <code>:</code> 与 <code>属性值</code> 之间必须包含空格。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+</code></pre></div><p><strong>[强制] <code>列表型属性值</code> 书写在单行时，<code>,</code> 后必须跟一个空格。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+</code></pre></div><h4 id="_2-3-行长度"><a href="#_2-3-行长度" class="header-anchor">#</a> 2.3 行长度</h4> <p><strong>[强制] 每行不得超过 120 个字符，除非单行不可分割。</strong>
+解释：</p> <p>常见不可分割的场景为URL超长。</p> <p><strong>[建议] 对于超长的样式，在样式值的 <code>空格</code> 处或 <code>,</code> 后换行，建议按逻辑分组。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 不同属性值按逻辑分组 */</span>
+<span class="token property">background</span><span class="token punctuation">:</span>
+  transparent <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>aVeryVeryVeryLongUrlIsPlacedHere<span class="token punctuation">)</span></span>
+  no-repeat 0 0<span class="token punctuation">;</span>
+
+<span class="token comment">/* 可重复多次的属性，每次重复一行 */</span>
+<span class="token property">background-image</span><span class="token punctuation">:</span>
+  <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>aVeryVeryVeryLongUrlIsPlacedHere<span class="token punctuation">)</span></span>
+  <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>anotherVeryVeryVeryLongUrlIsPlacedHere<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 类似函数的属性值可以根据函数调用的缩进进行 */</span>
+<span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">-webkit-gradient</span><span class="token punctuation">(</span>
+  linear<span class="token punctuation">,</span>
+  left bottom<span class="token punctuation">,</span>
+  left top<span class="token punctuation">,</span>
+  <span class="token function">color-stop</span><span class="token punctuation">(</span>0.04<span class="token punctuation">,</span> <span class="token function">rgb</span><span class="token punctuation">(</span>88<span class="token punctuation">,</span>94<span class="token punctuation">,</span>124<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function">color-stop</span><span class="token punctuation">(</span>0.52<span class="token punctuation">,</span> <span class="token function">rgb</span><span class="token punctuation">(</span>115<span class="token punctuation">,</span>123<span class="token punctuation">,</span>162<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="_2-4-选择器"><a href="#_2-4-选择器" class="header-anchor">#</a> 2.4 选择器</h4> <p><strong>[强制] 当一个 <code>rule</code> 包含多个 <code>selector</code> 时，每个选择器声明必须独占一行。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.post,
+.page,
+.comment</span> <span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.post, .page, .comment</span> <span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] &gt;、+、~ 选择器的两边各保留一个空格。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">main &gt; nav</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">label + input</span> <span class="token punctuation">{</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">input:checked ~ button</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #69C<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">main&gt;nav</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">label+input</span> <span class="token punctuation">{</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">input:checked~button</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #69C<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] 属性选择器中的值必须用双引号包围。</strong>
+解释：</p> <p>不允许使用单引号，不允许不使用引号。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">article[character=&quot;juliet&quot;]</span> <span class="token punctuation">{</span>
+  <span class="token property">voice-family</span><span class="token punctuation">:</span> <span class="token string">'Vivien Leigh'</span><span class="token punctuation">,</span> victoria<span class="token punctuation">,</span> female<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">article[character='juliet']</span> <span class="token punctuation">{</span>
+  <span class="token property">voice-family</span><span class="token punctuation">:</span> <span class="token string">'Vivien Leigh'</span><span class="token punctuation">,</span> victoria<span class="token punctuation">,</span> female<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_2-5-属性"><a href="#_2-5-属性" class="header-anchor">#</a> 2.5 属性</h4> <p><strong>[强制] 属性定义必须另起一行。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span> <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] 属性定义后必须以分号结尾。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_2-6-缩进"><a href="#_2-6-缩进" class="header-anchor">#</a> 2.6 缩进</h4> <p><strong>[建议] 使用 2 个空格做为一个缩进层级。</strong></p> <p>解释：</p> <p>JS静态规则检测使用eslint standard规范,其中定义缩进为2个空格，因此建议CSS在缩进风格中保持统一</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.selector</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-通用"><a href="#_3-通用" class="header-anchor">#</a> 3 通用</h2> <h4 id="_3-1-选择器"><a href="#_3-1-选择器" class="header-anchor">#</a> 3.1 选择器</h4> <p><strong>[强制] 如无必要，不得为 id、class 选择器添加类型选择器进行限定。</strong></p> <p>解释：</p> <p>在性能和维护性上，都有一定的影响。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">#error,
+.danger-message</span> <span class="token punctuation">{</span>
+  <span class="token property">font-color</span><span class="token punctuation">:</span> #c00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">dialog#error,
+p.danger-message</span> <span class="token punctuation">{</span>
+  <span class="token property">font-color</span><span class="token punctuation">:</span> #c00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[建议] 选择器的嵌套层级应不大于 3 级，位置靠后的限定条件应尽可能精确。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">#username input</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token selector">.comment .avatar</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token comment">/* good */</span>
+<span class="token selector">.page-container</span> <span class="token punctuation">{</span>
+  <span class="token selector">.content</span> <span class="token punctuation">{</span>
+    <span class="token selector">.profile</span> <span class="token punctuation">{</span>
+      // STOP!
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.page .header .login #username input</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token selector">.comment div *</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h4 id="_3-2-属性书写顺序"><a href="#_3-2-属性书写顺序" class="header-anchor">#</a> 3.2 属性书写顺序</h4> <p><strong>[建议] 同一 rule set 下的属性在书写时，应按功能进行分组，并以 Formatting Model（布局方式、位置） &gt; Box Model（尺寸） &gt; Typographic（文本相关） &gt; Visual（视觉效果） 的顺序书写，以提高代码的可读性。</strong></p> <p>解释：</p> <ul><li>Formatting Model 相关属性包括：position / top / right / bottom / left / float / display/ overflow 等</li> <li>Box Model 相关属性包括：border / margin / padding / width / height 等</li> <li>Typographic 相关属性包括：font / line-height / text-align / word-wrap 等</li> <li>Visual 相关属性包括：background / color / transition / list-style 等</li> <li>另外，如果包含 content 属性，应放在最前面。</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.sidebar</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* formatting model: positioning schemes / offsets / z-indexes / display / ...  */</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">overflow-x</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+
+  <span class="token comment">/* box model: sizes / margins / paddings / borders / ...  */</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #ddd<span class="token punctuation">;</span>
+
+  <span class="token comment">/* typographic: font / aligns / text styles / ... */</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+
+  <span class="token comment">/* visual: colors / shadows / gradients / ... */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #f5f5f5<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">;</span>
+    <span class="token property">-moz-transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">;</span>
+      <span class="token property">transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_3-3-清除浮动"><a href="#_3-3-清除浮动" class="header-anchor">#</a> 3.3 清除浮动</h4> <p><strong>[建议] 当元素需要撑起高度以包含内部的浮动元素时，通过对伪类设置 <code>clear</code> 或触发 <a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener noreferrer">BFC<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 的方式进行 <code>clearfix</code>。尽量不使用增加空标签的方式。</strong></p> <p>解释：</p> <p>触发 BFC 的方式很多，常见的有：</p> <ul><li>float 非 none</li> <li>position 非 static</li> <li>overflow 非 visible</li></ul> <p>如希望使用更小副作用的清除浮动方法，参见 <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank" rel="noopener noreferrer">A new micro clearfix hack<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 一文。</p> <p>另需注意，对已经触发 BFC 的元素不需要再进行 clearfix。</p> <h4 id="_3-4-important"><a href="#_3-4-important" class="header-anchor">#</a> 3.4 !important</h4> <p><strong>[建议] 尽量不使用 <code>!important</code> 声明。</strong> <strong>[建议] 当需要强制指定样式且不允许任何场景覆盖时，通过标签内联和 <code>!important</code>定义样式。</strong></p> <p>解释：</p> <p>必须注意的是，仅在设计上 确实不允许任何其它场景覆盖样式 时，才使用内联的 !important 样式。通常在第三方环境的应用中使用这种方案。下面的 z-index 章节是其中一个特殊场景的典型样例。</p> <h4 id="_3-5-z-index"><a href="#_3-5-z-index" class="header-anchor">#</a> 3.5 z-index</h4> <p><strong>[建议] 将 z-index 进行分层，对文档流外绝对定位元素的视觉层级关系进行管理。</strong></p> <p>解释：</p> <p>同层的多个元素，如多个由用户输入触发的 <code>Dialog</code>，在该层级内使用相同的 <code>z-index</code> 或递增 <code>z-index</code>。</p> <p>建议每层包含100个 z-index 来容纳足够的元素，如果每层元素较多，可以调整这个数值。</p> <p><strong>[建议] 在可控环境下，期望显示在最上层的元素，<code>z-index</code> 指定为 <code>999999</code>。</strong></p> <p>解释：</p> <p>可控环境分成两种，一种是自身项目环境；还有一种是可能会被其他部门引用，但是不会被外部第三方的产品引用。</p> <p>不建议取值为 <code>2147483647</code>。以便于自身产品线被其他产品线引用时，当遇到层级覆盖冲突的情况，留出向上调整的空间。</p> <p><strong>[建议] 在第三方环境下，期望显示在最上层的元素，通过标签内联和 <code>!important</code>，将 <code>z-index</code> 指定为 <code>2147483647</code>。</strong></p> <p>解释：</p> <p>第三方环境对于开发者来说完全不可控。在第三方环境下的元素，为了保证元素不被其页面其他样式定义覆盖，需要采用此做法。</p> <h2 id="_4-值与单位"><a href="#_4-值与单位" class="header-anchor">#</a> 4 值与单位</h2> <h4 id="_4-1-文本"><a href="#_4-1-文本" class="header-anchor">#</a> 4.1 文本</h4> <p><strong>[强制] 文本内容必须用单引号包裹。</strong></p> <p>解释：</p> <p>文本类型的内容可能在选择器、属性值等内容中。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">html[lang|=&quot;zh&quot;] q:before</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;“&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">html[lang|=&quot;zh&quot;] q:after</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;”&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_4-2-url"><a href="#_4-2-url" class="header-anchor">#</a> 4.2 url()</h4> <p><strong>[强制] <code>url()</code> 函数中的路径不加引号。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>bg.png<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[建议] url() 函数中的绝对路径可省去协议名。</strong></p> <div class="language- extra-class"><pre class="language-text"><code>body {
+  background: url(//baidu.com/img/bg.png) no-repeat 0 0;
+}
+</code></pre></div><h4 id="_4-3-长度"><a href="#_4-3-长度" class="header-anchor">#</a> 4.3 长度</h4> <p><strong>[强制] 长度为 0 时须省略单位。 (也只有长度单位可省)</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0px 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_4-4-颜色"><a href="#_4-4-颜色" class="header-anchor">#</a> 4.4 颜色</h4> <p><strong>[强制] RGB颜色值必须使用十六进制记号形式 <code>#rrggbb</code>。不允许使用 <code>rgb()</code>。</strong></p> <p>解释：</p> <p>带有<code>alpha</code>的颜色信息可以使用 <code>rgba()</code>。使用 <code>rgba()</code> 时每个逗号后必须保留一个空格。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 128<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> .3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> #008000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>128<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 128<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] 颜色值可以缩写时，必须使用缩写形式。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #aca<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #aaccaa<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] 颜色值不允许使用命名色值。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #90ee90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> lightgreen<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[建议] 颜色值中的英文字符采用小写。如不用小写也需要保证同一项目内保持大小写一致。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #aca<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #90ee90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #ACA<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #90EE90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #ACA<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #90ee90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_4-5-2d-位置"><a href="#_4-5-2d-位置" class="header-anchor">#</a> 4.5 2D 位置</h4> <p><strong>[强制] 必须同时给出水平和垂直方向的位置。</strong></p> <p>解释：</p> <p>2D 位置初始值为 0% 0%，但在只有一个方向的值时，另一个方向的值会被解析为 center。为避免理解上的困扰，应同时给出两个方向的值。<a href="https://www.w3.org/TR/CSS21/colors.html#propdef-background-position" target="_blank" rel="noopener noreferrer">background-position属性值的定义<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background-position</span><span class="token punctuation">:</span> center top<span class="token punctuation">;</span> <span class="token comment">/* 50% 0% */</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background-position</span><span class="token punctuation">:</span> top<span class="token punctuation">;</span> <span class="token comment">/* 50% 0% */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_5-文本编排"><a href="#_5-文本编排" class="header-anchor">#</a> 5 文本编排</h2> <h4 id="_5-1-字体族"><a href="#_5-1-字体族" class="header-anchor">#</a> 5.1 字体族</h4> <p><strong>[强制] <code>font-family</code> 属性中的字体族名称应使用字体的英文 <code>Family Name</code>，其中如有空格，须放置在单引号中。</strong></p> <p>解释：</p> <p>所谓英文 <code>Family Name</code>，为字体文件的一个元数据，常见名称如下：</p> <table><thead><tr><th style="text-align:left;">字体</th> <th style="text-align:center;">操作系统</th> <th style="text-align:right;">Family Name</th></tr></thead> <tbody><tr><td style="text-align:left;">宋体</td> <td style="text-align:center;">(中易宋体)</td> <td style="text-align:right;">Windows	SimSun</td></tr> <tr><td style="text-align:left;">黑体</td> <td style="text-align:center;">(中易黑体)</td> <td style="text-align:right;">Windows	SimHei</td></tr> <tr><td style="text-align:left;">微软雅黑</td> <td style="text-align:center;">Windows</td> <td style="text-align:right;">Microsoft YaHei</td></tr> <tr><td style="text-align:left;">微软正黑</td> <td style="text-align:center;">Windows</td> <td style="text-align:right;">Microsoft JhengHei</td></tr> <tr><td style="text-align:left;">华文黑体</td> <td style="text-align:center;">Mac/iOS</td> <td style="text-align:right;">STHeiti</td></tr> <tr><td style="text-align:left;">冬青黑体</td> <td style="text-align:center;">Mac/iOS</td> <td style="text-align:right;">Hiragino Sans GB</td></tr> <tr><td style="text-align:left;">文泉驿正黑</td> <td style="text-align:center;">Linux</td> <td style="text-align:right;">WenQuanYi Zen Hei</td></tr> <tr><td style="text-align:left;">文泉驿微米黑</td> <td style="text-align:center;">Linux</td> <td style="text-align:right;">WenQuanYi Micro Hei</td></tr></tbody></table> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Microsoft YaHei'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] <code>font-family</code> 按「西文字体在前、中文字体在后」、「效果佳 (质量高/更能满足需求) 的字体在前、效果一般的字体在后」的顺序编写，最后必须指定一个通用字体族( serif / sans-serif )。</strong></p> <p>解释：</p> <p>更详细说明可参考<a href="https://www.zhihu.com/question/19911793/answer/13329819" target="_blank" rel="noopener noreferrer">本文<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* Display according to platform */</span>
+<span class="token selector">.article</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* Specific for most platforms */</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Helvetica Neue&quot;</span><span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> <span class="token string">&quot;Hiragino Sans GB&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;WenQuanYi Micro Hei&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] <code>font-family</code> 不区分大小写，但在同一个项目中，同样的 <code>Family Name</code> 大小写必须统一。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_5-2-字号"><a href="#_5-2-字号" class="header-anchor">#</a> 5.2 字号</h4> <p><strong>[强制] 需要在 <code>Windows</code> 平台显示的中文内容，其字号应不小于 <code>12px</code>。</strong></p> <p>解释：</p> <p>由于 <code>Windows</code> 的字体渲染机制，小于 <code>12px</code> 的文字显示效果极差、难以辨认。</p> <h4 id="_5-3-字体风格"><a href="#_5-3-字体风格" class="header-anchor">#</a> 5.3 字体风格</h4> <p><strong>[建议] 需要在 <code>Windows</code> 平台显示的中文内容，不要使用除 <code>normal</code> 外的 <code>font-style</code>。其他平台也应慎用。</strong></p> <p>解释：</p> <p>由于中文字体没有 <code>italic</code> 风格的实现，所有浏览器下都会 <code>fallback</code> 到 <code>obilique</code> 实现 (自动拟合为斜体)，小字号下 (特别是 <code>Windows</code> 下会在小字号下使用点阵字体的情况下) 显示效果差，造成阅读困难。</p> <h4 id="_5-4-字重"><a href="#_5-4-字重" class="header-anchor">#</a> 5.4 字重</h4> <p>[建议] <code>font-weight</code> 属性必须使用数值方式描述。
+解释：</p> <p><code>CSS</code> 的字重分 <code>100 – 900</code> 共九档，但目前受字体本身质量和浏览器的限制，实际上支持 <code>400</code> 和 <code>700</code> 两档，分别等价于关键词 <code>normal</code> 和 <code>bold</code>。</p> <p>浏览器本身使用一系列<a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-weight" target="_blank" rel="noopener noreferrer">启发式规则<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>来进行匹配，在 <code>&lt;700</code> 时一般匹配字体的 <code>Regular</code> 字重，<code>&gt;=700</code> 时匹配 <code>Bold</code> 字重。</p> <p>但已有浏览器开始支持 <code>=600</code> 时匹配 <code>Semibold</code> 字重 (见<a href="http://justineo.github.io/slideshows/font/#/3/15" target="_blank" rel="noopener noreferrer">此表<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>)，故使用数值描述增加了灵活性，也更简短。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_5-5-行高"><a href="#_5-5-行高" class="header-anchor">#</a> 5.5 行高</h4> <p><strong>[建议] <code>line-height</code> 在定义文本段落时，应使用数值。</strong></p> <p>解释：</p> <p>将 <code>line-height</code> 设置为数值，浏览器会基于当前元素设置的 <code>font-size</code> 进行再次计算。在不同字号的文本段落组合中，能达到较为舒适的行间间隔效果，避免在每个设置了 <code>font-size</code> 都需要设置 <code>line-height</code>。</p> <p>当 <code>line-height</code> 用于控制垂直居中时，还是应该设置成与容器高度一致。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.container</span> <span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-变换与动画"><a href="#_6-变换与动画" class="header-anchor">#</a> 6 变换与动画</h2> <p><strong>[强制] 使用 <code>transition</code> 时应指定 <code>transition-property</code>。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">,</span> border-color 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> all 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[建议] 尽可能在浏览器能高效实现的属性上添加过渡和动画。</strong></p> <p>解释：</p> <p>见<a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/" target="_blank" rel="noopener noreferrer">本文<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，在可能的情况下应选择这样四种变换：</p> <ul><li>transform: translate(npx, npx);</li> <li>transform: scale(n);</li> <li>transform: rotate(ndeg);</li> <li>opacity: 0..1;</li> <li>典型的，可以使用 translate 来代替 left 作为动画属性。</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> transform 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>20px<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* move right for 20px */</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> left 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <span class="token comment">/* move right for 20px */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_7-响应式"><a href="#_7-响应式" class="header-anchor">#</a> 7 响应式</h2> <p><strong>[强制] <code>Media Query</code> 不得单独编排，必须与相关的规则一起定义。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* Good */</span>
+<span class="token comment">/* header styles */</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span>...<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token comment">/* header styles */</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* main styles */</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span>...<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token comment">/* main styles */</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* footer styles */</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span>...<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token comment">/* footer styles */</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">/* Bad */</span>
+<span class="token comment">/* header styles */</span>
+<span class="token comment">/* main styles */</span>
+<span class="token comment">/* footer styles */</span>
+
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span>...<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token comment">/* header styles */</span>
+  <span class="token comment">/* main styles */</span>
+  <span class="token comment">/* footer styles */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[强制] <code>Media Query</code> 如果有多个逗号分隔的条件时，应将每个条件放在单独一行中。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code>@media
+<span class="token punctuation">(</span><span class="token property">-webkit-min-device-pixel-ratio</span><span class="token punctuation">:</span> 2<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Webkit-based browsers */</span>
+<span class="token punctuation">(</span><span class="token property">min--moz-device-pixel-ratio</span><span class="token punctuation">:</span> 2<span class="token punctuation">)</span><span class="token punctuation">,</span>    <span class="token comment">/* Older Firefox browsers (prior to Firefox 16) */</span>
+<span class="token punctuation">(</span><span class="token property">min-resolution</span><span class="token punctuation">:</span> 2dppx<span class="token punctuation">)</span><span class="token punctuation">,</span>             <span class="token comment">/* The standard way */</span>
+<span class="token selector">(min-resolution: 192dpi)</span> <span class="token punctuation">{</span>           <span class="token comment">/* dppx fallback */</span>
+  <span class="token comment">/* Retina-specific stuff here */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[建议] 尽可能给出在高分辨率设备 (Retina) 下效果更佳的样式。</strong></p> <h2 id="_8-兼容性"><a href="#_8-兼容性" class="header-anchor">#</a> 8 兼容性</h2> <h4 id="_8-1-属性前缀"><a href="#_8-1-属性前缀" class="header-anchor">#</a> 8.1 属性前缀</h4> <p><strong>[强制] 带私有前缀的属性由长到短排列，按冒号位置对齐。</strong></p> <p>解释：</p> <p>标准属性放在最后，按冒号对齐方便阅读，也便于在编辑器内进行多行编辑。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+    <span class="token property">-moz-box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+      <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_8-2-hack"><a href="#_8-2-hack" class="header-anchor">#</a> 8.2 Hack</h4> <p><strong>[建议] 需要添加 hack 时应尽可能考虑是否可以采用其他方式解决。</strong></p> <p>解释：</p> <p>如果能通过合理的 <code>HTML</code> 结构或使用其他的 <code>CSS</code> 定义达到理想的样式，则不应该使用 <code>hack</code> 手段解决问题。通常 <code>hack</code> 会导致维护成本的增加。</p> <p><strong>[建议] 尽量使用 <code>选择器 hack</code> 处理兼容性，而非 <code>属性 hack</code>。</strong></p> <p>解释：</p> <p>尽量使用符合 <code>CSS</code> 语法的 <code>selector hack</code>，可以避免一些第三方库无法识别 <code>hack</code> 语法的问题。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* IE 7 */</span>
+<span class="token selector">*:first-child + html #header</span> <span class="token punctuation">{</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* IE 6 */</span>
+<span class="token selector">* html #header</span> <span class="token punctuation">{</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>[建议] 尽量使用简单的 <code>属性 hack</code>。</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">_display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span> <span class="token comment">/* fix double margin */</span>
+  <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.container</span> <span class="token punctuation">{</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  *<span class="token property">zoom</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span> <span class="token comment">/* triggering hasLayout */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_8-3-expression"><a href="#_8-3-expression" class="header-anchor">#</a> 8.3 Expression</h4> <p><strong>[强制] 禁止使用 <code>Expression</code>。</strong></p> <h2 id="_9-oocss-和-bem"><a href="#_9-oocss-和-bem" class="header-anchor">#</a> 9 OOCSS 和 BEM</h2> <h4 id="oocss"><a href="#oocss" class="header-anchor">#</a> OOCSS</h4> <p><code>OOCSS</code> 表示的是面向对象 <code>CSS（Object Oriented CSS）</code>，是一种把面向对象方法学应用到 <code>CSS</code> 代码组织和管理中的实践。面向对象方法学中的很多理念，如模块化、单一功能原则（Single responsibility principle）和关注点分离（Separation of concerns）等，对于需要组织和管理大量 <code>CSS</code> 代码的应用也是适用的。<code>OOCSS</code> 提出了 <code>CSS</code> 对象的概念，用来表示重复出现的可视化模式。这些模式可以被抽象成独立的 HTML、CSS 和 JavaScript 代码片段，并在整个项目中共享。</p> <p>OOCSS 有两个重要的原则：</p> <p>第一个原则是把结构和外观分开。重复出现的可视化模式应该只关注外观，而与 DOM 结构无关。这就要求 CSS 对象中的每个组成部分都有名称，并在 DOM 结构中通过 CSS 类名与之对应。因此在 OOCSS 中的样式规则都是使用类别选择器，而不依赖特定的 DOM 结构。这样可以提高 CSS 对象的可复用性。</p> <p>第二个原则是把容器和内容分开。这就要求在 CSS 样式中不应该出现与 DOM 树中的位置相关的规则。CSS 样式应该只关注内容，而不是 DOM 元素及其层次关系。</p> <p>OOCSS 除了这一套指导理论之外，还提供了一些 CSS 对象作为示例。比如多媒体对象，用来描述图片视频及其相关的文字。多媒体对象在 Facebook、Twitter 和微博上会经常出现。每条微博的左侧是用户的头像，右侧是文本内容。多媒体 CSS 对象中的 CSS 类有 media、img、bd 和 imgExt。这几个 CSS 类的含义如下：</p> <ul><li>media - 最外层的 CSS 类，用来表明这是一个多媒体对象。</li> <li>img - 表示出现在左侧的链接、图片或视频对象。</li> <li>bd - 表现出现在右侧的主要内容。</li> <li>imgExt - 表示额外的链接、图片或视频对象，出现在 bd 表示的主要内容的右侧。</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>media<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://oocss.org/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>img<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://placehold.it/50x50<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bd<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+OOCSS media object
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+.media {
+ margin: 10px;
+}
+
+.media, .bd {
+ overflow: hidden;
+}
+
+.media .img {
+ float: left;
+ margin-right: 10px;
+}
+
+.media .img img {
+ display: block;
+}
+
+.media .imgExt {
+ float: right;
+ margin-left: 10px;
+}
+</code></pre></div><p>参考资料</p> <ul><li>Nicole Sullivan 的 <a href="https://github.com/stubbornella/oocss/wiki" target="_blank" rel="noopener noreferrer">OOCSS wiki<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>Smashing Magazine 的 <a href="https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/" target="_blank" rel="noopener noreferrer">Introduction to OOCSS<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h4 id="bem"><a href="#bem" class="header-anchor">#</a> BEM</h4> <p>BEM 是一种前端项目开发的方法学，由 Yandex 公司提出。BEM 的名称来源于该方法学的三个组成部分的英文首字母，分别是块（Block）、元素（Element）和修饰符（Modifier）。这三个不同的组成部分称为 BEM 实体。</p> <h4 id="块"><a href="#块" class="header-anchor">#</a> 块</h4> <p>块即是通常所说的 Web 应用开发中的组件或模块。每个块在逻辑上和功能上都是相互独立的。块中封装了组件相关的 JavaScript、CSS 代码和 HTML 模板。由于块是独立的，可以在应用开发中进行复用，从而降低代码重复并提高开发效率。块可以放置在页面上的任何位置，也可以互相嵌套。同一个块可以在页面上存在多个实例。块的不同实例具有相似的结构。一个典型的块的示例是菜单。一个项目中可以有多个不同的菜单，具体相似的结构和样式。</p> <h4 id="元素"><a href="#元素" class="header-anchor">#</a> 元素</h4> <p>元素是块中的组成部分。元素不能离开块来使用。BEM 不推荐在元素中嵌套其他元素。在菜单块中，每个菜单项是块中的元素。</p> <h4 id="修饰符"><a href="#修饰符" class="header-anchor">#</a> 修饰符</h4> <p>修饰符用来定义块或元素的外观和行为。同样的块在应用不同的修饰符之后，会有不同的外观。当菜单块出现在页面上的不同位置时，可以有不同的样式。菜单块中的菜单项可以有选中或非选中的状态。</p> <p>不同 BEM 实体可以互相嵌套，形成 BEM 树。不过 BEM 树和 HTML 页面中的 DOM 树是不同的。BEM 树的抽象层次更高。在实现中需要避免在两者之间建立硬性的对应关系。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;article class=&quot;listing-card listing-card--featured&quot;&gt;
+
+  &lt;h1 class=&quot;listing-card__title&quot;&gt;Adorable 2BR in the sunny Mission&lt;/h1&gt;
+
+  &lt;div class=&quot;listing-card__content&quot;&gt;
+    &lt;p&gt;Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/article&gt;
+.listing-card</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token selector">.listing-card--featured</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token selector">.listing-card__title</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token selector">.listing-card__content</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+  - .listing-card 是一个块（block），表示高层次的组件。
+  - .listing-card__title 是一个元素（element），它属于 .listing-card 的一部分，因此块是由元素组成的。
+  - .listing-card--featured 是一个修饰符（modifier），表示这个块与 .listing-card 有着不同的状态或者变化。
+</code></pre></div><p>参考资料</p> <ul><li>CSS Trick 的 <a href="https://css-tricks.com/bem-101/" target="_blank" rel="noopener noreferrer">BEM 101<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>Harry Roberts 的 <a href="https://css-tricks.com/bem-101/" target="_blank" rel="noopener noreferrer">introduction to BEM<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/16/2020, 3:57:46 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/guide/code-standard/html.html" class="prev">
+        HTML编码规范
+      </a></span> <span class="next"><a href="/blog/guide/code-standard/js.html">
+        JS编码规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.6bfa0bc3.js" defer></script><script src="./assets/js/2.a7617878.js" defer></script><script src="./assets/js/24.ff27afea.js" defer></script>
+  </body>
+</html>
