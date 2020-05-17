@@ -105,7 +105,7 @@ npm run serve
 ├── postcss.config.js     # 配置rem转换，查看“配置项 - postcss.config.js”了解https://www.npmjs.com/package/postcss-px2rem
 └── vue.config.js         # 配置文件，详细请阅读“配置项-vue.config.js”部分
 ```
-开发详情：[移动端](/guide/mobile), [PC端](/guide/pc)
+开发详情：[移动端](/guide/mobile), [WEB端](/guide/web), [PC端](/guide/pc)
 
 ### 配置项
 

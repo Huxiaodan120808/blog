@@ -8,7 +8,11 @@ module.exports = {
       { text: '功能', 
         items: [
           { text: '富文本', link: '/components/richtext' },
-          { text: '复制粘贴', link: '/components/clipboard' }
+          { text: '复制粘贴', link: '/components/clipboard' },
+          { text: 'Daypilot-会议室大盘', link: '/components/clipboard' },
+          { text: 'FullCanlendar-移动端会议室选择器', link: '/components/clipboard' },
+          { text: 'Canlendar-日期', link: '/components/clipboard' },
+          { text: '单点登录', link: '/components/clipboard' }
         ]
       },
       { text: '相关系统', 
@@ -32,12 +36,16 @@ module.exports = {
               title: '基础'
             },
             {
-              path: 'pc',
-              title: 'PC端开发',
+              path: 'web',
+              title: 'web端开发',
             },
             {
               path: 'mobile',
               title: '移动端开发',
+            },
+            {
+              path: 'pc',
+              title: 'pc客户端',
             },
             {
               path: 'library',
