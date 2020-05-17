@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>web端开发模板 | Umeet-blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="集合脚手架, Vue开发模版, 代码规范, 工作流规范, 前端相关组件, 接口管理平台系统等, 旨在统一前端开发流程, 开发规范, 减少前端重复造轮子, 提升前端开发效率和代码质量">
+    <link rel="preload" href="/blog/assets/css/0.styles.a2346270.css" as="style"><link rel="preload" href="/blog/assets/js/app.b9157d90.js" as="script"><link rel="preload" href="/blog/assets/js/2.536c8a71.js" as="script"><link rel="preload" href="/blog/assets/js/34.46dcc70b.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.ed1640e0.js"><link rel="prefetch" href="/blog/assets/js/11.f094b1f5.js"><link rel="prefetch" href="/blog/assets/js/12.df4c79e7.js"><link rel="prefetch" href="/blog/assets/js/13.ced5678e.js"><link rel="prefetch" href="/blog/assets/js/14.d196a903.js"><link rel="prefetch" href="/blog/assets/js/15.fbb5c01a.js"><link rel="prefetch" href="/blog/assets/js/16.486c2abf.js"><link rel="prefetch" href="/blog/assets/js/17.1f1facef.js"><link rel="prefetch" href="/blog/assets/js/18.75b3e815.js"><link rel="prefetch" href="/blog/assets/js/19.044d87cf.js"><link rel="prefetch" href="/blog/assets/js/20.f7ba0dac.js"><link rel="prefetch" href="/blog/assets/js/21.53a96194.js"><link rel="prefetch" href="/blog/assets/js/22.1db33296.js"><link rel="prefetch" href="/blog/assets/js/23.2e0696f9.js"><link rel="prefetch" href="/blog/assets/js/24.7c2e0d9d.js"><link rel="prefetch" href="/blog/assets/js/25.26cb7671.js"><link rel="prefetch" href="/blog/assets/js/26.7f7dee04.js"><link rel="prefetch" href="/blog/assets/js/27.76489536.js"><link rel="prefetch" href="/blog/assets/js/28.35d24cbb.js"><link rel="prefetch" href="/blog/assets/js/29.d4766d9c.js"><link rel="prefetch" href="/blog/assets/js/3.e98c34f9.js"><link rel="prefetch" href="/blog/assets/js/30.52d65a28.js"><link rel="prefetch" href="/blog/assets/js/31.81f793d0.js"><link rel="prefetch" href="/blog/assets/js/32.b41e24f2.js"><link rel="prefetch" href="/blog/assets/js/33.cf70a0cd.js"><link rel="prefetch" href="/blog/assets/js/35.4ede7942.js"><link rel="prefetch" href="/blog/assets/js/36.49ee5e78.js"><link rel="prefetch" href="/blog/assets/js/4.89b0f3d5.js"><link rel="prefetch" href="/blog/assets/js/5.aafe72ea.js"><link rel="prefetch" href="/blog/assets/js/6.84c49b84.js"><link rel="prefetch" href="/blog/assets/js/7.4314ede3.js"><link rel="prefetch" href="/blog/assets/js/8.948fcc8f.js"><link rel="prefetch" href="/blog/assets/js/9.43eff6d8.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.a2346270.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Umeet-blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="功能" class="dropdown-title"><span class="title">功能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/components/richtext.html" class="nav-link">
+  富文本
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  复制粘贴
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  Daypilot-会议室大盘
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  FullCanlendar-移动端会议室选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  Canlendar-日期
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  单点登录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="相关系统" class="dropdown-title"><span class="title">相关系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/ecology/scaffold.html" class="nav-link">
+  脚手架工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/onpm.html" class="nav-link">
+  NPM镜像仓库
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/yapi.html" class="nav-link">
+  接口管理平台
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/sentry.html" class="nav-link">
+  前端错误统计平台
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="功能" class="dropdown-title"><span class="title">功能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/components/richtext.html" class="nav-link">
+  富文本
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  复制粘贴
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  Daypilot-会议室大盘
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  FullCanlendar-移动端会议室选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  Canlendar-日期
+</a></li><li class="dropdown-item"><!----> <a href="/blog/components/clipboard.html" class="nav-link">
+  单点登录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="相关系统" class="dropdown-title"><span class="title">相关系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/ecology/scaffold.html" class="nav-link">
+  脚手架工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/onpm.html" class="nav-link">
+  NPM镜像仓库
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/yapi.html" class="nav-link">
+  接口管理平台
+</a></li><li class="dropdown-item"><!----> <a href="/blog/ecology/sentry.html" class="nav-link">
+  前端错误统计平台
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>开发指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/common.html" class="sidebar-link">基础</a></li><li><a href="/blog/guide/web.html" class="active sidebar-link">web端开发</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/guide/web.html#目录结构" class="sidebar-link">目录结构</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#基础依赖" class="sidebar-link">基础依赖</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/guide/web.html#elementui" class="sidebar-link">ElementUI</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#scss" class="sidebar-link">SCSS</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#功能" class="sidebar-link">功能</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/guide/web.html#http" class="sidebar-link">HTTP</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#国际化" class="sidebar-link">国际化</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#主题" class="sidebar-link">主题</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#引导页" class="sidebar-link">引导页</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#进度条" class="sidebar-link">进度条</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#错误处理" class="sidebar-link">错误处理</a></li><li class="sidebar-sub-header"><a href="/blog/guide/web.html#浏览器类型判断" class="sidebar-link">浏览器类型判断</a></li></ul></li></ul></li><li><a href="/blog/guide/mobile.html" class="sidebar-link">移动端开发</a></li><li><a href="/blog/guide/pc.html" class="sidebar-link">pc客户端</a></li><li><a href="/blog/guide/library.html" class="sidebar-link">插件开发</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>多环境配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/env-standard/env-build.html" class="sidebar-link">Vue多环境配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>代码规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/code-standard/html.html" class="sidebar-link">HTML编码规范</a></li><li><a href="/blog/guide/code-standard/css.html" class="sidebar-link">CSS编码规范</a></li><li><a href="/blog/guide/code-standard/js.html" class="sidebar-link">JS编码规范</a></li><li><a href="/blog/guide/code-standard/vue.html" class="sidebar-link">Vue编码规范</a></li><li><a href="/blog/guide/code-standard/eslint.html" class="sidebar-link">ESLint规范</a></li><li><a href="/blog/guide/code-standard/filename.html" class="sidebar-link">命名规范</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>工作流规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/dev-standard/project-version.html" class="sidebar-link">版本规范</a></li><li><a href="/blog/guide/dev-standard/git-version.html" class="sidebar-link">Git-Flow工作流规范</a></li><li><a href="/blog/guide/cooperation-standard/cooperation.html" class="sidebar-link">前后端协作流程规范</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="web端开发模板"><a href="#web端开发模板" class="header-anchor">#</a> web端开发模板</h1> <h2 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>├── dist                  <span class="token comment"># 运行npm build，编译后生成的代码存放目录</span>
+├── node_modules          <span class="token comment"># npm本地依赖包</span>
+├── public                <span class="token comment"># 该目录下的静态资源会被复制到输出目录（dist）中，不经过 webpack处理</span>
+├── src
+│   ├── api               <span class="token comment"># 与后端交互使用相关方法，接口定义</span>
+│   ├── assets            <span class="token comment"># 放置一些静态资源，例如图片，图标，字体等</span>
+│   ├── components        <span class="token comment"># 公共组件  </span>
+│   ├── lang              <span class="token comment"># 国际化多语言定义 </span>
+│   ├── router            <span class="token comment"># vue-router相关配置 https://router.vuejs.org/zh/guide/</span>
+│   ├── store             <span class="token comment"># vuex 相关配置 https://vuex.vuejs.org/zh/</span>
+│   ├── styles            <span class="token comment"># 公共样式定义</span>
+│   ├── theme             <span class="token comment"># 主题定义</span>
+│   ├── utils             <span class="token comment"># 工具类定义，详细请阅读“工具类”部分介绍</span>
+│   ├── views             <span class="token comment"># 所有的路由组件，业务功能开发</span>
+│   ├── App.vue           <span class="token comment"># 路由组件的顶层路由</span>
+│   └── main.js           <span class="token comment"># vue入口文件</span>
+├── tests                 <span class="token comment"># 测试</span>
+├── .browserslistrc       <span class="token comment"># 指定项目的目标浏览器的范围，查看“配置项-目标浏览器”了解</span>
+├── .env                  <span class="token comment"># 环境变量配置，详细请阅读“环境变量和模式”部分介绍</span>
+├── .gitignore            <span class="token comment"># 配置不提交到git仓库的文件</span>
+├── postcss.config.js     <span class="token comment"># 配置rem转换，查看“配置项 - postcss.config.js”了解https://www.npmjs.com/package/postcss-px2rem</span>
+└── vue.config.js         <span class="token comment"># 配置文件，详细请阅读“配置项-vue.config.js”部分</span>
+</code></pre></div><h2 id="基础依赖"><a href="#基础依赖" class="header-anchor">#</a> 基础依赖</h2> <h3 id="elementui"><a href="#elementui" class="header-anchor">#</a> ElementUI</h3> <p>Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库</p> <h4 id="引入-element"><a href="#引入-element" class="header-anchor">#</a> 引入 Element</h4> <h5 id="完整引入"><a href="#完整引入" class="header-anchor">#</a> 完整引入</h5> <p>在<code>main.js</code>中写入以下内容</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ElementUI <span class="token keyword">from</span> <span class="token string">'element-ui'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'element-ui/lib/theme-chalk/index.css'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ElementUI<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token parameter">h</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>以上代码便完成了 <code>Element</code> 的引入。需要注意的是，样式文件需要单独引入。</p> <h5 id="按需引入"><a href="#按需引入" class="header-anchor">#</a> 按需引入</h5> <p>借助<a href="https://github.com/ElementUI/babel-plugin-component" target="_blank" rel="noopener noreferrer">babel-plugin-component<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，我们可以只引入需要的组件，以达到减小项目体积的目的</p> <ol><li>新增<code>element-ui.js</code>，定义组件的引入，以<code>Button</code>为例</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> <span class="token string">'element-ui/lib/theme-chalk/index.css'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+Button<span class="token punctuation">,</span>
+Message
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span>
+<span class="token comment">/** 或写为
+ * Vue.component(Button.name, Button)
+ */</span>
+
+ <span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$message <span class="token operator">=</span> Message  <span class="token comment">// 弹框类注册方式不一样</span>
+</code></pre></div><ol start="2"><li><code>mian.js</code> 引入 <code>element-ui.js</code></li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'./element-ui'</span>
+</code></pre></div><h5 id="全局配置"><a href="#全局配置" class="header-anchor">#</a> 全局配置</h5> <p>在引入 Element 时，可以传入一个全局配置对象。该对象目前支持 <code>size</code> 与 <code>zIndex</code> 字段。</p> <p><code>size</code> 用于改变组件的默认尺寸，<code>zIndex</code> 设置弹框的初始 <code>z-index（默认值：2000）</code>。</p> <ul><li>完整引入Element</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Element <span class="token keyword">from</span> <span class="token string">'element-ui'</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Element<span class="token punctuation">,</span> <span class="token punctuation">{</span> size<span class="token operator">:</span> <span class="token string">'small'</span><span class="token punctuation">,</span> zIndex<span class="token operator">:</span> <span class="token number">3000</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>按需引入Element</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span><span class="token punctuation">;</span>
+
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$<span class="token constant">ELEMENT</span> <span class="token operator">=</span> <span class="token punctuation">{</span> size<span class="token operator">:</span> <span class="token string">'small'</span><span class="token punctuation">,</span> zIndex<span class="token operator">:</span> <span class="token number">3000</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>按照以上设置，项目中所有拥有 size 属性的组件的默认尺寸均为 'small'，弹框的初始 z-index 为 3000。</p> <p><strong>我们当前开发采用按需引入，故之后的文档中只说明按需引入方式</strong></p> <h4 id="调用"><a href="#调用" class="header-anchor">#</a> 调用</h4> <p><strong>1. 组件内调用</strong></p> <p>1.1. 普通组件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// element-ui.js 引入需要调用的组件</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>确认<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>1.2. 弹窗类组件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// element-ui.js 引入需要调用的组件</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Message <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span><span class="token punctuation">;</span>
+
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$message <span class="token operator">=</span> Message
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>save<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>确认<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">save</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        message<span class="token operator">:</span> <span class="token string">'保存'</span><span class="token punctuation">,</span>
+        type<span class="token operator">:</span> <span class="token string">'success'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>2. 普通js或全局调用</strong></p> <p>因为<code>element-ui.js</code>中引入的组件注册在vue实例中，故在普通js或全局引用时，直接调用不能被识别，需要单独再次引入</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Message <span class="token keyword">from</span> <span class="token string">'element-ui'</span>
+
+<span class="token function">Message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  message<span class="token operator">:</span> <span class="token string">'保存'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'success'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>具体组件调用，请参考<a href="https://element.eleme.cn/#/zh-CN/component/layout" target="_blank" rel="noopener noreferrer">官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="scss"><a href="#scss" class="header-anchor">#</a> SCSS</h3> <p>Scss 是一款强化 <code>CSS</code> 的辅助工具，完全兼容<code>css3</code>；在 CSS 基础上增加变量、嵌套 (nesting)、混合 (mixins) 等功能；通过函数进行颜色值与属性值的运算；提供控制指令 (control directives)等高级功能。</p> <h4 id="_1-变量"><a href="#_1-变量" class="header-anchor">#</a> 1. 变量</h4> <p>使用<code>$</code>标识变量</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$width</span></span><span class="token punctuation">:</span> 5em<span class="token punctuation">;</span>
+</code></pre></div><p>直接使用即调用变量：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">#main </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token variable">$width</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>变量支持块级作用域，嵌套规则内定义的变量只能在嵌套规则内使用（局部变量），不在嵌套规则内定义的变量则可在任何地方使用（全局变量）。将局部变量转换为全局变量可以添加 <code>!global</code> 声明。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">#main </span><span class="token punctuation">{</span>
+  <span class="token property"><span class="token variable">$width</span></span><span class="token punctuation">:</span> 5em<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token variable">$width</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">#main</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 5em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_2-嵌套规则"><a href="#_2-嵌套规则" class="header-anchor">#</a> 2. 嵌套规则</h4> <p>Scss 允许将一套 CSS 样式嵌套进另一套样式中，内层的样式将它外层的选择器作为父选择器。嵌套功能避免了重复输入父选择器。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">#main p </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #00ff00<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 97%<span class="token punctuation">;</span>
+
+  <span class="token selector">.redbox </span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #ff0000<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #000000<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">#main p </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #00ff00<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 97%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#main p .redbox </span><span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #ff0000<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #000000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>2.1 父选择器<code>&amp;</code></p> <p>使用 <code>&amp;</code> 代表嵌套规则外层的父选择器。<code>&amp;</code> 必须作为选择器的第一个字符，其后可以跟随后缀生成复合的选择器</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">a </span><span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span> <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#main </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>-sidebar </span><span class="token punctuation">{</span> <span class="token property">border</span><span class="token punctuation">:</span> 1px solid<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">a</span> <span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">a:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#main</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#main-sidebar</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>2.2 属性嵌套</p> <p>有些 CSS 属性遵循相同的命名空间 (namespace)，比如 <code>font-family</code>, <code>font-size</code>, <code>font-weight</code> 都以 <code>font</code> 作为属性的命名空间。Scss 允许将属性嵌套在命名空间中。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.funky </span><span class="token punctuation">{</span>
+  <span class="token selector">font: </span><span class="token punctuation">{</span>
+    <span class="token property">family</span><span class="token punctuation">:</span> fantasy<span class="token punctuation">;</span>
+    <span class="token property">size</span><span class="token punctuation">:</span> 30em<span class="token punctuation">;</span>
+    <span class="token property">weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.funky</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> fantasy<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 30em<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_3-导入文件"><a href="#_3-导入文件" class="header-anchor">#</a> 3.导入文件</h4> <p>scss的<code>@import</code>规则在生成css文件时就把相关文件导入进来。这意味着所有相关的样式被归纳到了同一个css文件中，而无需发起额外的下载请求。另外，所有在被导入文件中定义的变量和混合器均可在导入文件中使用。</p> <p>3.1 使用scss部分文件
+<code>scss</code>局部文件的文件名以下划线开头。这样，<code>scss</code>就不会在编译时单独编译这个文件输出<code>css</code>，而只把这个文件用作导入</p> <p>3.2 原生css导入</p> <p>下列三种情况下会生成原生的<code>CSS@import</code>:</p> <ul><li>被导入文件的名字以.css结尾；</li> <li>被导入文件的名字是一个URL地址；</li> <li>被导入文件的名字是CSS的url()值。</li> <li><code>@import</code> 包含 media queries</li></ul> <h4 id="_4-注释"><a href="#_4-注释" class="header-anchor">#</a> 4. 注释</h4> <p>Sass 支持标准的 CSS 多行注释 <code>/* */</code>，以及单行注释 <code>//</code>，前者会 被完整输出到编译后的 CSS 文件中，而后者则不会</p> <p>将 <code>!</code> 作为多行注释的第一个字符表示在压缩输出模式下保留这条注释并输出到 CSS 文件中，通常用于添加版权信息。</p> <p>插值语句 (interpolation) 也可写进多行注释中输出变量值：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$version</span></span><span class="token punctuation">:</span> <span class="token string">&quot;1.2.3&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">/* This CSS is generated by My Snazzy Framework version #{$version}. */</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* This CSS is generated by My Snazzy Framework version 1.2.3. */</span>
+</code></pre></div><h4 id="_5-运算"><a href="#_5-运算" class="header-anchor">#</a> 5. 运算</h4> <p>5.1 数字运算</p> <p>支持数字的加减乘除、取整等运算 (<code>+, -, *, /, %</code>)，如果必要会在不同单位间转换值</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 1in <span class="token operator">+</span> 8pt<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 1.111in<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>5.2 字符串运算</p> <p><code>+</code> 可用于连接字符串</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> e <span class="token operator">+</span> -resize<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> e-resize<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>如果有引号字符串（位于 + 左侧）连接无引号字符串，运算结果是有引号的，相反，无引号字符串（位于 + 左侧）连接有引号字符串，运算结果则没有引号</li> <li>运算表达式与其他值连用时，用空格做连接符</li> <li>在有引号的文本字符串中使用 <code>#{}</code> 插值语句可以添加动态的值</li> <li>空的值被视作插入了空字符串</li></ul> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">p:before </span><span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;Foo &quot;</span> <span class="token operator">+</span> Bar<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> sans- <span class="token operator">+</span> <span class="token string">&quot;serif&quot;</span><span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;I ate #{5 + 10} pies!&quot;</span><span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;I ate #{$value} pies!&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 3px <span class="token operator">+</span> 4px auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">p:before</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;Foo Bar&quot;</span><span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;I ate 15 pies!&quot;</span><span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;I ate pies!&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 7px auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>5.3 圆括号</p> <p>圆括号可以用来影响运算的顺序</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 1em <span class="token operator">+</span> <span class="token punctuation">(</span>2em <span class="token operator">*</span> 3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 7em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_6-指令"><a href="#_6-指令" class="header-anchor">#</a> 6. 指令</h4> <p><strong>@extend</strong></p> <p><code>@extend</code> ,告诉 Scss 将一个选择器下的所有样式继承给另一个选择器。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.error </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> .error<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面代码的意思是将 <code>.error</code> 下的所有样式继承给 <code>.seriousError</code>，<code>border-width: 3px;</code> 是单独给 <code>.seriousError</code> 设定特殊样式，这样，使用 <code>.seriousError</code> 的地方可以不再使用 <code>.error</code>。</p> <h4 id="_7-控制指令"><a href="#_7-控制指令" class="header-anchor">#</a> 7. 控制指令</h4> <p><strong>@if</strong></p> <p><code>@if</code> 声明后面可以跟多个 <code>@else if</code> 声明，或者一个<code>@else</code> 声明。如果 <code>@if</code> 声明失败，Scss 将逐条执行 <code>@else if</code> 声明，如果全部失败，最后执行 <code>@else</code> 声明</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$type</span></span><span class="token punctuation">:</span> monster<span class="token punctuation">;</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$type</span> == ocean </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">@else if</span> <span class="token selector"><span class="token variable">$type</span> == matador </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">@else if</span> <span class="token selector"><span class="token variable">$type</span> == monster </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">@else</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>@for</strong></p> <p><code>@for</code> 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动</p> <p>这个指令包含两种格式：<code>@for $var from &lt;start&gt; through &lt;end&gt;</code>，或者 <code>@for $var from &lt;start&gt; to &lt;end&gt;</code>，区别在于 <code>through</code> 与 <code>to</code> 的含义：当使用 <code>through</code> 时，条件范围包含 <code>&lt;start&gt;</code> 与 <code>&lt;end&gt;</code> 的值，而使用 <code>to</code> 时条件范围只包含 <code>&lt;start&gt;</code> 的值不包含 <code>&lt;end&gt;</code> 的值。另外，<code>$var</code> 可以是任何变量，比如 <code>$i</code>；<code>&lt;start&gt;</code> 和 <code>&lt;end&gt;</code> 必须是整数值</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@for</span> <span class="token variable">$i</span> <span class="token keyword">from</span> 1 <span class="token keyword">through</span> <span class="token selector">3 </span><span class="token punctuation">{</span>
+  <span class="token selector">.item-<span class="token variable">#{$i}</span> </span><span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> 2em <span class="token operator">*</span> <span class="token variable">$i</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.item-1</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.item-2</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 4em<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.item-3</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 6em<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><p><strong>@each</strong></p> <p><code>@each</code> 指令的格式是 <code>$var in &lt;list&gt;</code>, <code>$var</code> 可以是任何变量名</p> <p><code>@each</code> 将变量 <code>$var</code> 作用于值列表中的每一个项目，然后输出结果</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$animal</span> in puma, sea-slug, egret, salamander </span><span class="token punctuation">{</span>
+  <span class="token selector">.<span class="token variable">#{$animal}</span>-icon </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/#{$animal}.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>编译为</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.puma-icon</span> <span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>'/images/puma.png'<span class="token punctuation">)</span></span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.sea-slug-icon</span> <span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>'/images/sea-slug.png'<span class="token punctuation">)</span></span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.egret-icon</span> <span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>'/images/egret.png'<span class="token punctuation">)</span></span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.salamander-icon</span> <span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>'/images/salamander.png'<span class="token punctuation">)</span></span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><p><a href="https://www.sass.hk/docs/" target="_blank" rel="noopener noreferrer">官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="功能"><a href="#功能" class="header-anchor">#</a> 功能</h2> <h3 id="http"><a href="#http" class="header-anchor">#</a> HTTP</h3> <h3 id="国际化"><a href="#国际化" class="header-anchor">#</a> 国际化</h3> <p>Element 组件内部默认使用中文，若希望使用其他语言，则需要进行多语言设置</p> <p>Element 搭配 <code>i18n</code>，实现多语言切换。</p> <h4 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h4> <ol><li><code>index.js</code> 语言包引入，集成i18n，语言设定、切换等实现</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// lang/index.js</span>
+<span class="token comment">// 语言环境切换</span>
+<span class="token function">changeLang</span><span class="token punctuation">(</span>lan<span class="token punctuation">)</span> <span class="token comment">// 传入参数，指定语言类型，否则中英文之间相互切换。语言类型通过cookie存储在本地</span>
+<span class="token comment">// 获取语言</span>
+<span class="token function">getLanguage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">// 获取本地语言类型，读取cookie获取，若不存在则读取浏览器语言环境</span>
+</code></pre></div><ol start="2"><li><code>zh.js</code> 自定义中文语言包；<code>en.js</code>自定义英文语言包。语言包分别实现界面中需要切换语言时展示的文案信息，以<code>json</code>格式定义。</li> <li>需要切换其他语言时，增加对应的语言包。在<code>index.js</code>中引入该语言包</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// lang/index.js 以英文包引入为例</span>
+<span class="token keyword">import</span> ElementEnLocale <span class="token keyword">from</span> <span class="token string">'element-ui/lib/locale/lang/en'</span> <span class="token comment">// element内置语言包引入</span>
+<span class="token keyword">import</span> zhLocale <span class="token keyword">from</span> <span class="token string">'./en'</span> <span class="token comment">// 自定义语言包引入</span>
+
+<span class="token keyword">const</span> messages <span class="token operator">=</span> <span class="token punctuation">{</span>
+  en<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 添加语言包至messages集合</span>
+    <span class="token operator">...</span>ElementEnLocale<span class="token punctuation">,</span>
+    <span class="token operator">...</span>enLocale
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  zh<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>ElementZhLocale<span class="token punctuation">,</span>
+    <span class="token operator">...</span>zhLocale
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h4> <p><strong>1. 文案展示</strong></p> <p>语言包中定义文案对应数据</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 语言包定义</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  message<span class="token operator">:</span> <span class="token string">'你好！'</span>
+  <span class="token keyword">public</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'标题'</span><span class="token punctuation">,</span>
+    save<span class="token operator">:</span> <span class="token string">'保存'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>1.1 组件内调用，<code>$t</code>访问</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{{title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{{$t('message')}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>{{$t('public.save')}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        title<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'title'</span><span class="token punctuation">)</span>    <span class="token comment">// 标题; js部分调用</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>1.2 如果不需要切换语言可以放到data里面，如果有切换则放到computed里面，否者无效，更多可连接data\computed区别</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{{title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{{$t('message')}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>{{$t('public.save')}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+      title<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'title'</span><span class="token punctuation">)</span> <span class="token comment">// 标题; js部分调用</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>1.3 在普通js或者全局调用。由于<code>$t</code>注册在组件内，故只能在组件内调用，在普通js中不识别该函数。外部调用时，需要引入<code>i18n</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> i18n <span class="token keyword">from</span> <span class="token string">'@/lang'</span>
+
+i18n<span class="token punctuation">.</span><span class="token function">t</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">)</span> <span class="token comment">// 你好！</span>
+
+</code></pre></div><p><strong>2. 切换语言环境</strong></p> <p>调用 <code>changeLang</code></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>$changeLang<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>中英文环境切换<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>$changeLang('en')<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>切换至英文环境<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="主题"><a href="#主题" class="header-anchor">#</a> 主题</h3> <h4 id="主题编辑器"><a href="#主题编辑器" class="header-anchor">#</a> 主题编辑器</h4> <p>使用<a href="https://element.eleme.cn/#/zh-CN/theme" target="_blank" rel="noopener noreferrer">在线主题编辑器<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>可以修改定制 Element 所有全局和组件的 Design Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）</p> <h4 id="仅替换主题色"><a href="#仅替换主题色" class="header-anchor">#</a> 仅替换主题色</h4> <p>如果仅希望更换 Element 的主题色，推荐使用<a href="https://elementui.github.io/theme-chalk-preview/#/zh-CN" target="_blank" rel="noopener noreferrer">在线主题生成工具<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。使用上述工具，可以很方便地实时预览主题色改变之后的视觉，同时它还可以基于新的主题色生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」和「搭配插件按需引入组件主题」部分）。</p> <h4 id="在项目中改变-scss-变量"><a href="#在项目中改变-scss-变量" class="header-anchor">#</a> 在项目中改变 SCSS 变量</h4> <p>Element 的 <code>theme-chalk</code> 使用 SCSS 编写，我们当前的项目使用了 SCSS，那么可以直接在项目中改变 Element 的样式变量。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// element-variables.scss</span>
+<span class="token comment">/* 改变主题色变量 */</span>
+<span class="token property"><span class="token variable">$--color-primary</span></span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span>
+
+<span class="token comment">/* 改变 icon 字体路径变量，必需 */</span>
+<span class="token property"><span class="token variable">$--font-path</span></span><span class="token punctuation">:</span> <span class="token string">'~element-ui/lib/theme-chalk/fonts'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">@import</span> <span class="token string">&quot;~element-ui/packages/theme-chalk/src/index&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>之后，在项目的入口文件中，直接引入以上样式文件即可（无需引入 Element 编译好的 CSS 文件）：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// main.js</span>
+<span class="token keyword">import</span> <span class="token string">'./element-variables.scss'</span>
+
+</code></pre></div><h4 id="使用自定义主题"><a href="#使用自定义主题" class="header-anchor">#</a> 使用自定义主题</h4> <h5 id="引入自定义主题"><a href="#引入自定义主题" class="header-anchor">#</a> 引入自定义主题</h5> <p>和引入默认主题一样，在代码里直接引用「在线主题编辑器」或「命令行工具」生成的主题的 theme/index.css 文件即可。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// main.js</span>
+<span class="token keyword">import</span> <span class="token string">'../theme/index.css'</span>
+</code></pre></div><h5 id="搭配插件按需引入组件主题"><a href="#搭配插件按需引入组件主题" class="header-anchor">#</a> 搭配插件按需引入组件主题</h5> <p>如果是搭配 <code>babel-plugin-component</code> 一起使用，只需要修改 <code>.babelrc</code> 的配置，指定 <code>styleLibraryName</code> 路径为自定义主题相对于 <code>.babelrc</code> 的路径，注意要加 <code>~</code>。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;component&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;libraryName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;element-ui&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;styleLibraryName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~theme&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="引导页"><a href="#引导页" class="header-anchor">#</a> 引导页</h3> <p><code>Driver.js</code> 是一个轻量级（gzip压缩后约4KB），无需依赖且功能强大的原生 JavaScript引导插件 。兼容所有主流浏览器，可以突出显示页面上的指定区域，以吸引用户的注意力。当网站改版或者新增新功能后，使用Driver.js引导用户展示说明新功能，增强用户对产品体验。</p> <h4 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h4> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span> driver.js
+<span class="token comment">#yarn add driver.js</span>
+</code></pre></div><h4 id="引入"><a href="#引入" class="header-anchor">#</a> 引入</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Driver <span class="token keyword">from</span> <span class="token string">'driver.js'</span>
+<span class="token keyword">import</span> <span class="token string">'driver.js/dist/driver.min.css'</span>
+</code></pre></div><h4 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> driver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Driver</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="api"><a href="#api" class="header-anchor">#</a> API</h4> <p>初始配置</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> driver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Driver</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  className<span class="token operator">:</span> <span class="token string">'scoped-class'</span><span class="token punctuation">,</span>        <span class="token comment">// className to wrap driver.js popover</span>
+  animate<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                    <span class="token comment">// 是否设置动画</span>
+  opacity<span class="token operator">:</span> <span class="token number">0.75</span><span class="token punctuation">,</span>                    <span class="token comment">// 背景的透明度(0表示仅弹出不覆盖)</span>
+  padding<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>                      <span class="token comment">// 元素与覆盖层边缘的距离</span>
+  allowClose<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                 <span class="token comment">// 点击覆盖是否关闭</span>
+  overlayClickNext<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>          <span class="token comment">// 点击覆盖是否应移动到下一步</span>
+  doneBtnText<span class="token operator">:</span> <span class="token string">'Done'</span><span class="token punctuation">,</span>              <span class="token comment">// 最后一个按钮上的文本</span>
+  closeBtnText<span class="token operator">:</span> <span class="token string">'Close'</span><span class="token punctuation">,</span>            <span class="token comment">// 当前步骤“关闭”按钮上的文本</span>
+  stageBackground<span class="token operator">:</span> <span class="token string">'#ffffff'</span><span class="token punctuation">,</span>       <span class="token comment">// 后台突出显示元素的背景色</span>
+  nextBtnText<span class="token operator">:</span> <span class="token string">'Next'</span><span class="token punctuation">,</span>              <span class="token comment">// 当前步骤的下一步按钮文本</span>
+  prevBtnText<span class="token operator">:</span> <span class="token string">'Previous'</span><span class="token punctuation">,</span>          <span class="token comment">// 当前步骤的下一步按钮文本</span>
+  showButtons<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>               <span class="token comment">// 不在页脚中显示控制按钮</span>
+  keyboardControl<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>            <span class="token comment">// 允许通过键盘进行控制（退出以关闭，箭头键移动）</span>
+  scrollIntoViewOptions<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>        <span class="token comment">// We use `scrollIntoView()` when possible, pass here the options for it if you want any</span>
+  <span class="token function-variable function">onHighlightStarted</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">Element</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 在元素即将突出显示时调用</span>
+  <span class="token function-variable function">onHighlighted</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">Element</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>      <span class="token comment">// 当元素完全突出显示时调用</span>
+  <span class="token function-variable function">onDeselected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">Element</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>       <span class="token comment">// 取消选择元素时调用</span>
+  <span class="token function-variable function">onReset</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">Element</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>            <span class="token comment">// 覆盖即将清除时调用</span>
+  <span class="token function-variable function">onNext</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">Element</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>             <span class="token comment">// 在任何步骤转到下一步时调用</span>
+  <span class="token function-variable function">onPrevious</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">Element</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>         <span class="token comment">// 在任何步骤转到上一步时调用</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>步骤定义</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> stepDefinition <span class="token operator">=</span> <span class="token punctuation">{</span>
+  element<span class="token operator">:</span> <span class="token string">'#some-item'</span><span class="token punctuation">,</span>        <span class="token comment">// 要突出显示的查询选择器字符串或节点</span>
+  stageBackground<span class="token operator">:</span> <span class="token string">'#ffffff'</span><span class="token punctuation">,</span>   <span class="token comment">// 这将覆盖初始化是的设置</span>
+  popover<span class="token operator">:</span> <span class="token punctuation">{</span>                    <span class="token comment">// 如果空的或没有给的话，就不会有popover</span>
+    className<span class="token operator">:</span> <span class="token string">'popover-class'</span><span class="token punctuation">,</span> <span class="token comment">// 类名</span>
+    title<span class="token operator">:</span> <span class="token string">'Title'</span><span class="token punctuation">,</span>             <span class="token comment">// popover 标题</span>
+    description<span class="token operator">:</span> <span class="token string">'Description'</span><span class="token punctuation">,</span> <span class="token comment">// popover 内容</span>
+    showButtons<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>         <span class="token comment">// 不在页脚中显示控制按钮</span>
+    doneBtnText<span class="token operator">:</span> <span class="token string">'Done'</span><span class="token punctuation">,</span>        <span class="token comment">// 最后一个按钮上的文本</span>
+    closeBtnText<span class="token operator">:</span> <span class="token string">'Close'</span><span class="token punctuation">,</span>      <span class="token comment">// 关闭按钮上的文本</span>
+    nextBtnText<span class="token operator">:</span> <span class="token string">'Next'</span><span class="token punctuation">,</span>        <span class="token comment">// 下一步按钮的文本</span>
+    prevBtnText<span class="token operator">:</span> <span class="token string">'Previous'</span><span class="token punctuation">,</span>    <span class="token comment">// 上一个步按钮的文本</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">onNext</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>             <span class="token comment">// 从当前步骤转到下一步时调用</span>
+  <span class="token function-variable function">onPrevious</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>         <span class="token comment">// 从当前步骤转到上一步时调用</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Methods API</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> driver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Driver</span><span class="token punctuation">(</span>driverOptions<span class="token punctuation">)</span>
+
+<span class="token comment">// 检查驱动程序是否处于活动状态</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>driver<span class="token punctuation">.</span>isActivated<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Driver is active'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 使用查询选择器或步骤定义突出显示元素，单个高亮</span>
+driver<span class="token punctuation">.</span><span class="token function">highlight</span><span class="token punctuation">(</span>string<span class="token operator">|</span>stepDefinition<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 在使用步骤指南的情况下，可以调用以下方法；多个步骤</span>
+driver<span class="token punctuation">.</span><span class="token function">defineSteps</span><span class="token punctuation">(</span><span class="token punctuation">[</span> stepDefinition1<span class="token punctuation">,</span> stepDefinition2<span class="token punctuation">,</span> stepDefinition3 <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 定义介绍步骤</span>
+driver<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span>stepNumber <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>  <span class="token comment">// 开始执行定义的步骤</span>
+driver<span class="token punctuation">.</span><span class="token function">moveNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>             <span class="token comment">// 转到步骤列表中的下一步</span>
+driver<span class="token punctuation">.</span><span class="token function">movePrevious</span><span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">// 转到步骤列表中的上一步</span>
+driver<span class="token punctuation">.</span><span class="token function">hasNextStep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>          <span class="token comment">// 检查是否有下一步要移动到</span>
+driver<span class="token punctuation">.</span><span class="token function">hasPreviousStep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token comment">// 检查是否有上一步要移动到</span>
+
+<span class="token comment">// 重新定位弹出窗口和突出显示的元素</span>
+driver<span class="token punctuation">.</span><span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 重置覆盖并清除屏幕</span>
+driver<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 可以传递布尔值，立即清除，不做动画等。</span>
+driver<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span>clearImmediately <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 检查是否有突出显示的元素</span>
+driver<span class="token punctuation">.</span><span class="token function">hasHighlightedElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 获取屏幕上当前突出显示的元素。</span>
+<span class="token keyword">const</span> activeElement <span class="token operator">=</span> driver<span class="token punctuation">.</span><span class="token function">getHighlightedElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 获取最后一个突出显示的元素</span>
+<span class="token keyword">const</span> lastActiveElement <span class="token operator">=</span> driver<span class="token punctuation">.</span><span class="token function">getLastHighlightedElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+activeElement<span class="token punctuation">.</span><span class="token function">getCalculatedPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 获取活动元素的屏幕坐标。</span>
+activeElement<span class="token punctuation">.</span><span class="token function">hidePopover</span><span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment">// 隐藏 popover</span>
+activeElement<span class="token punctuation">.</span><span class="token function">showPopover</span><span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment">// 展示 popover</span>
+
+activeElement<span class="token punctuation">.</span><span class="token function">getNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">// 获取此元素后面的dom元素。</span>
+
+</code></pre></div><h4 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h4> <p>突出显示单个元素</p> <div class="language-js extra-class"><pre class="language-js"><code>onst driver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Driver</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+driver<span class="token punctuation">.</span><span class="token function">highlight</span><span class="token punctuation">(</span><span class="token string">'#create-post'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 无popover</span>
+
+driver<span class="token punctuation">.</span><span class="token function">highlight</span><span class="token punctuation">(</span><span class="token punctuation">{</span>    <span class="token comment">// 显示popover</span>
+  element<span class="token operator">:</span> <span class="token string">'#some-element'</span><span class="token punctuation">,</span>
+  popover<span class="token operator">:</span> <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'Title for the Popover'</span><span class="token punctuation">,</span>
+    description<span class="token operator">:</span> <span class="token string">'Description for it'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>功能步骤展示</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> driver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Driver</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Define the steps for introduction</span>
+driver<span class="token punctuation">.</span><span class="token function">defineSteps</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    element<span class="token operator">:</span> <span class="token string">'#first-element-introduction'</span><span class="token punctuation">,</span>
+    popover<span class="token operator">:</span> <span class="token punctuation">{</span>
+      className<span class="token operator">:</span> <span class="token string">'first-step-popover-class'</span><span class="token punctuation">,</span>
+      title<span class="token operator">:</span> <span class="token string">'Title on Popover'</span><span class="token punctuation">,</span>
+      description<span class="token operator">:</span> <span class="token string">'Body of the popover'</span><span class="token punctuation">,</span>
+      position<span class="token operator">:</span> <span class="token string">'left'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    element<span class="token operator">:</span> <span class="token string">'#second-element-introduction'</span><span class="token punctuation">,</span>
+    popover<span class="token operator">:</span> <span class="token punctuation">{</span>
+      title<span class="token operator">:</span> <span class="token string">'Title on Popover'</span><span class="token punctuation">,</span>
+      description<span class="token operator">:</span> <span class="token string">'Body of the popover'</span><span class="token punctuation">,</span>
+      position<span class="token operator">:</span> <span class="token string">'top'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    element<span class="token operator">:</span> <span class="token string">'#third-element-introduction'</span><span class="token punctuation">,</span>
+    popover<span class="token operator">:</span> <span class="token punctuation">{</span>
+      title<span class="token operator">:</span> <span class="token string">'Title on Popover'</span><span class="token punctuation">,</span>
+      description<span class="token operator">:</span> <span class="token string">'Body of the popover'</span><span class="token punctuation">,</span>
+      position<span class="token operator">:</span> <span class="token string">'right'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Start the introduction</span>
+driver<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><a href="https://kamranahmed.info/driver.js/" target="_blank" rel="noopener noreferrer">官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="进度条"><a href="#进度条" class="header-anchor">#</a> 进度条</h3> <h3 id="错误处理"><a href="#错误处理" class="header-anchor">#</a> 错误处理</h3> <h4 id="页面"><a href="#页面" class="header-anchor">#</a> 页面</h4> <h5 id="_404"><a href="#_404" class="header-anchor">#</a> 404</h5> <p>页面级的处理由<code>vue-router</code> 统一处理，所有匹配不到正确路由的页面都会进入<code>404</code>页面</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token string">'*'</span><span class="token punctuation">,</span> redirect<span class="token operator">:</span> <span class="token string">'/404'</span> <span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><b>注意事项</b> <code>404</code> 页面一定要放在最后加载，如果放在constantRoutes一同声明了<code>404</code>，后面的所有页面都会被拦截到<code>404</code></p></div> <h4 id="请求"><a href="#请求" class="header-anchor">#</a> 请求</h4> <p>项目中的所有请求都会走<code>@/utils/request.js</code>里面创建的axios实例，它做了统一处理。<a href="http://gitlab.adc.com/oppo-front/new-mo-portal/blob/master/src/utils/request.js" target="_blank" rel="noopener noreferrer"><code>完整代码</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>可以通过axios提供的响应拦截器(<code>service.interceptors.response</code>)针对后台返回的不同错误代码进行处理, 如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// response interceptor</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token comment">/**
+   * If you want to get http information such as headers or status
+   * Please return  response =&gt; response
+  */</span>
+
+  <span class="token comment">/**
+   * Determine the request status by custom code
+   * Here is just an example
+   * You can also judge the status by HTTP Status Code
+   */</span>
+  <span class="token parameter">response</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> response<span class="token punctuation">.</span>data
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>res <span class="token operator">&amp;&amp;</span> res<span class="token punctuation">.</span>code <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> res
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>code <span class="token operator">===</span> <span class="token number">100001</span> <span class="token operator">||</span> res<span class="token punctuation">.</span>code <span class="token operator">===</span> <span class="token number">100002</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// token认证失败 或者 账号已失效，则返回登陆页面</span>
+        <span class="token function">logout</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">Message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          message<span class="token operator">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+          type<span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+          duration<span class="token operator">:</span> <span class="token number">5</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+          showClose<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token parameter">error</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>error <span class="token operator">&amp;&amp;</span> error<span class="token punctuation">.</span>response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> res <span class="token operator">=</span> error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>data
+        <span class="token keyword">let</span> showMsg <span class="token operator">=</span> <span class="token boolean">true</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">case</span> <span class="token number">400</span><span class="token operator">:</span>
+            res<span class="token punctuation">.</span>msg <span class="token operator">=</span> <span class="token string">'请求错误'</span>
+            <span class="token keyword">break</span>
+          <span class="token keyword">case</span> <span class="token number">401</span><span class="token operator">:</span>
+            res<span class="token punctuation">.</span>msg <span class="token operator">=</span> <span class="token string">''</span>
+            showMsg <span class="token operator">=</span> <span class="token boolean">false</span>
+            <span class="token function">logout</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+          <span class="token keyword">case</span> <span class="token number">403</span><span class="token operator">:</span>
+            res<span class="token punctuation">.</span>msg <span class="token operator">=</span> <span class="token string">'无权限访问'</span>
+            <span class="token keyword">break</span>
+          <span class="token keyword">case</span> <span class="token number">404</span><span class="token operator">:</span>
+            res<span class="token punctuation">.</span>msg <span class="token operator">=</span> <span class="token string">'未找到请求路径'</span>
+            <span class="token keyword">break</span>
+          <span class="token keyword">default</span><span class="token operator">:</span>
+            res<span class="token punctuation">.</span>msg <span class="token operator">=</span> res<span class="token punctuation">.</span>msg <span class="token operator">||</span> <span class="token string">'连接服务器错误'</span>
+            <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+        Message<span class="token punctuation">.</span><span class="token function">closeAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>showMsg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">Message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token operator">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+            type<span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+            duration<span class="token operator">:</span> <span class="token number">5</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+            showClose<span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre></div><p>因为所有的请求返回的都是<code>promise</code>, 所以你也可以对每一个请求通过<code>catch</code>错误，从而进行单独的处理</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">getInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// xxx</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="前端错误统计"><a href="#前端错误统计" class="header-anchor">#</a> 前端错误统计</h4> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>对于线上产生的前端错误我们也可以借助前端错误统计<a href="http://sentry.myoas.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <h3 id="浏览器类型判断"><a href="#浏览器类型判断" class="header-anchor">#</a> 浏览器类型判断</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/guide/common.html" class="prev">
+        基础
+      </a></span> <span class="next"><a href="/blog/guide/mobile.html">
+        移动端开发
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.b9157d90.js" defer></script><script src="/blog/assets/js/2.536c8a71.js" defer></script><script src="/blog/assets/js/34.46dcc70b.js" defer></script>
+  </body>
+</html>
