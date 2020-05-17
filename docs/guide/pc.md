@@ -179,7 +179,6 @@ mac没有这种配置。
 
 ## 功能
 
-
 ### 缓存机制
 Electron使用electron-store实现数据的缓存。清除缓存使用node.js的 fs 以及shell实现缓存的读取和清除功能
 ``` js
@@ -319,3 +318,245 @@ export { JsBridge }
 ```
 
 调用 JSBridge.joinMeeting(prams)
+
+## 发布
+### windows端
+1、使用electron-builder编译生成exe应用包
+``` sh
+$ npm run build:win #输出OutUmeet
+```
+2、使用inno-setup打包成安装程序包，用于客户分发。执行 win-tool/Umeet.iss脚本，点此前往[`inno-setup官网`](https://jrsoftware.org/isinfo.php)学习
+``` sh
+; 脚本由 Inno Setup 脚本向导 生成！
+; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
+
+#define MyAppName "Umeet"
+#define MyAppSortName "Umeet"
+#define MyAppVersion "3.1.0-beta1"
+#define MyAppPublisher "SYSTEC TECHNOLOGY CO.,LTD"
+#define MyAppURL "http://umeet.systec.com.cn"
+#define MyAppExeName "Umeet.exe"
+#define SchemeName "umeetapp"
+#define AppId "{9B19E29F-2157-4667-AFEF-39BDBA2F163B}"
+
+[Setup]
+; 注: AppId的值为单独标识该应用程序。
+; 不要为其他安装程序使用相同的AppId值。
+; (若要生成新的 GUID，可在菜单中点击 "工具|生成 GUID"。)
+AppId={{#AppId}
+AppName={#MyAppName}
+AppVersion={#MyAppVersion}
+AppVerName={#MyAppName}
+;AppVerName={#MyAppName} {#MyAppVersion}
+AppPublisher={#MyAppPublisher}
+AppPublisherURL={#MyAppURL}
+AppSupportURL={#MyAppURL}
+AppUpdatesURL={#MyAppURL}
+DefaultDirName={autopf}\{#MyAppName}
+DefaultGroupName={#MyAppName}
+;DisableProgramGroupPage=yes
+; 以下行取消注释，以在非管理安装模式下运行（仅为当前用户安装）。
+;PrivilegesRequired=lowest
+OutputDir=D:\umeet-setup
+OutputBaseFilename=Umeet-v{#MyAppVersion}-setup
+SetupIconFile=D:\project\Umeet\umeet-pc\assets\icon.ico
+;Uninstallable=yes
+;UninstallDisplayIcon={app}\icon.ico
+Compression=lzma
+SolidCompression=yes
+WizardStyle=modern
+
+[Languages]
+Name: "chinesesimp"; MessagesFile: "compiler:Default.isl"
+
+[Tasks]
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags:  checkablealone;
+Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
+
+[Files]
+Source: "D:\project\Umeet\umeet-pc\OutUmeet\win-ia32-unpacked\Umeet.exe"; DestDir: "{app}"; Flags: ignoreversion;
+;需要静默安装的vc_redist.x86.exe文件
+Source: "D:\project\Umeet\umeet-pc\win-tool\vc_redist.x86.exe"; DestDir: "{app}"; Flags: ignoreversion; AfterInstall: CustormInstallVC
+Source: "D:\project\Umeet\umeet-pc\OutUmeet\win-ia32-unpacked\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+; 注意: 不要在任何共享系统文件上使用“Flags: ignoreversion”
+Source: "D:\project\Umeet\umeet-pc\assets\icon.ico"; DestDir: "{app}"
+
+[Icons]
+Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
+Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+;开始菜单中添加卸载入口
+Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
+Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}";IconFilename: "{app}\icon.ico"
+
+[Run]
+Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent;
+;Filename: {app}\vc\vc_redist.x86.exe; Flags: skipifdoesntexist runhidden  // 没有更多判断的静默安装方式
+
+[Registry]
+// 添加scheme唤起客户端的注册表信息
+Root: HKCR; SubKey: "{#SchemeName}"; ValueData: "{#MyAppName}"; ValueType: string; Flags: CreateValueIfDoesntExist UninsDeleteKey;
+Root: HKCR; SubKey: "{#SchemeName}"; ValueName: "URL Protocol"; Flags: CreateValueIfDoesntExist; ValueType: string;
+Root: HKCR; SubKey: "{#SchemeName}\DefaultIcon"; ValueData: "{app}\{#MyAppExeName}"; Flags: CreateValueIfDoesntExist; ValueType: string;
+; {app}\{#MyAppExeName} ""--params=%1"" 后面的表示唤起客户端并且传递url参数 %1表示任意变量
+Root: HKCR; SubKey: "{#SchemeName}\shell\open\command"; ValueData: "{app}\{#MyAppExeName} ""--params=%1"""; Flags: CreateValueIfDoesntExist; ValueType: string;
+// 向注册表中添加 安装后的路径
+Root:HKLM;Subkey:"SOFTWARE\{#MyAppName}";Flags:uninsdeletekeyifempty
+Root:HKLM;Subkey:"SOFTWARE\{#MyAppName}";ValueType:string;ValueName:"InstallPath";ValueData:"{app}";Flags:uninsdeletekey
+
+[Code]
+//静默安装vc_regedit_x86.exe （electron以及zoom-sdk需要的依赖）
+procedure CustormInstallVC();
+var
+ ResultCode: Integer;
+begin
+ // 判断是否安装了vc_regedit_x86.exe
+    if not RegValueExists(HKEY_LOCAL_MACHINE, 'SOFTWARE\WOW6432Node\Microsoft\VisualStudio\14.0\VC\Runtimes\x86', 'Version') then
+      begin
+         // 静默安装
+         //MsgBox('没有安装vc', mbInformation, MB_OK);
+         Exec(ExpandConstant(CurrentFileName), '/verysilent /norestart /q', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+      end;
+end;
+
+// 判断程序是否运行中
+function IsAppRunning(const FileName, strExeName : string): Boolean;
+var
+    IsRunning: Integer;
+   ErrorCode: Integer;
+   strCmdKill: String;  // 终止软件命令
+   appWnd: HWND;   //进程ID
+begin
+    Result :=true; //安装程序继续
+    IsRunning:=FindWindowByWindowName(FileName);
+    strCmdKill := Format('/c taskkill /f /t /im %s', [strExeName]);
+    while IsRunning<>0 do
+    begin
+       if Msgbox('{#MyAppName} 正在运行,是否要强制退出程序？', mbConfirmation, MB_YESNO) = idNO then
+       begin
+       // 点击 否  --- 安装程序退出
+        Result :=false;
+        IsRunning :=0;
+      end else begin
+        // 点击 是--终止程序
+        ShellExec('open', ExpandConstant('{cmd}'), strCmdKill, '', SW_HIDE, ewNoWait, ErrorCode);
+          //给进程发送关闭消息
+        //PostMessage(appWnd, 18, 0, 0);       // quit
+        Result :=true; //安装程序继续
+        IsRunning :=0;
+      end;
+     end;
+end;
+
+// 安装前---先删除旧的包
+const MySetupMutex = 'My Program {#AppId}';
+function InitializeSetup(): boolean;
+var
+  ResultStr: String;
+  ResultCode: Integer;
+begin
+    Result := not CheckForMutexes(MySetupMutex);
+    if Result then
+    begin
+        CreateMutex(MySetupMutex);
+         Result := IsAppRunning('{#MyAppName}', '{#MyAppExeName}');
+         if Result then
+         begin
+           // 根据注册表中是否存在卸载信息作为依据，是否已经安装了
+           if RegKeyExists(HKEY_LOCAL_MACHINE, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{#AppId}_is1') then
+              begin
+              if RegQueryStringValue(HKEY_LOCAL_MACHINE, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{#AppId}_is1', 'UninstallString', ResultStr) then
+                begin
+                  // 安装前先删除旧的包
+                  ResultStr := RemoveQuotes(ResultStr);
+                  Exec(ResultStr, '/verysilent /norestart /q', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+                  RegDeleteKeyIncludingSubkeys(HKCR, '{#SchemeName}');
+                end;
+                result := true;
+            end;
+              result := true;
+        end;
+         Exit;
+  end else begin
+    //MsgBox('您正在安装程序，不能重复操作...',mbError,MB_OK);
+    Exit;
+  end;
+end;
+
+// 安装时 --- 修改卸载的名称（因为默认是unins000）
+procedure CurStepChanged(CurStep: TSetupStep);
+var
+uninspath, uninsname, NewUninsName: String;
+begin
+  if CurStep=ssDone then
+    begin
+      // 指定新的卸载文件名（不包含扩展名），请相应修改！
+      NewUninsName:='卸载{#MyAppName}';
+      // 以下重命名卸载文件
+      uninspath:= ExtractFilePath(ExpandConstant('{uninstallexe}'));
+      uninsname:= Copy(ExtractFileName(ExpandConstant('{uninstallexe}')),1,8);
+      RenameFile(uninspath + uninsname + '.exe', uninspath + NewUninsName + '.exe');
+      RenameFile(uninspath + uninsname + '.dat', uninspath + NewUninsName + '.dat');
+      // 修改注册表 卸载信息
+      RegWriteStringValue(HKEY_LOCAL_MACHINE, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{#AppId}_is1', 'UninstallString', '"' + uninspath + NewUninsName + '.exe"');
+      RegWriteStringValue(HKEY_LOCAL_MACHINE, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{#AppId}_is1', 'QuietUninstallString', '"' + uninspath + NewUninsName + '.exe" /silent');
+      end;
+end;
+
+// 卸载时---- 关闭软件
+function InitializeUninstall(): Boolean;
+begin
+  Result := IsAppRunning('{#MyAppName}', '{#MyAppExeName}');
+end;
+
+// 卸载时 ---- 删除注册表信息
+procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
+begin
+if CurUninstallStep = usUninstall then
+ DelTree(ExpandConstant('{app}'), True, True, True);
+ DelTree(ExpandConstant('{userappdata}\{#MyAppName}'), True, True, True);    // 删除缓存文件
+ DelTree(ExpandConstant('{userappdata}\{#MyAppSortName}'), True, True, True);    // 删除缓存文件
+ RegDeleteKeyIncludingSubkeys(HKCR, '{#SchemeName}');
+end;
+```
+执行完后会生成setup.exe安装程序包，客户端可自定义安装目录等。
+
+### mac端
+1、使用electron-builder 编译生成Umeet.app程序包
+``` sh
+$ npm run build:mac #输出OutUmeet
+```
+2、使用package工具把Umeet.app打包成pkg安装程序包，并添加脚本文件，实现覆盖安装以及清除缓存功能。
+脚本文件在mac-tool/preinstall
+``` sh
+#!/usr/bin/env bash
+ 
+echo "Running HEDU.app preinstall script."
+echo "Killing HEDU.app."
+killall "HEDU"
+ 
+echo "Finding old versions of HEDU."
+mdfind -onlyin /Applications "kMDItemCFBundleIdentifier=='cn.com.systec.umeet.hsedugroup'" | xargs -I % rm -rf %
+ 
+rm -rf  ~/Library/Application\ Support/HEDU/
+
+echo "Removed old versions of HEDU.app, if any."
+echo "Ran HEDU.app preinstall script."
+
+# 以下是曾用名，如果当前应用没有曾用名，则不要重复以下代码
+echo "Running AImeet.app preinstall script."
+echo "Killing AImeet.app."
+killall "AImeet"
+ 
+echo "Finding old versions of AImeet."
+mdfind -onlyin /Applications "kMDItemCFBundleIdentifier=='cn.com.systec.umeet.hsedugroup'" | xargs -I % rm -rf %
+ 
+rm -rf  ~/Library/Application\ Support/AImeet/
+
+echo "Removed old versions of AImeet.app, if any."
+echo "Ran AImeet.app preinstall script."
+ 
+
+```
+
+会输出 umeet.pkg
+再进行签名等操作后即可分发给客户。
